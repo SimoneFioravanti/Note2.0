@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scala Musicale</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    label, select, input, button {
-      margin: 10px 0;
-    }
-    button {
-      padding: 10px;
-      cursor: pointer;
-    }
-    #risultato {
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scala Musicale</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, sans-serif;
+            padding: 30px;
+            text-align: center;
+        }
+
+        label, select, input, button {
+            margin: 20px 0;
+            color: black; /* Cambia il colore del testo della label */
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #risultato {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="StyleSheet1.css">
 </head>
 <body>
 
   <h1>Scala Musicale</h1>
 
-  <label for="nota">Inserisci la tonalità (es: C, D#, Bb):</label>
+  <label for="nota" >Inserisci la tonalità (es: C, D#, Bb):</label>
   <input type="text" id="nota" />
+    <br />
 
   <label for="tipo">Tipo di scala:</label>
   <select id="tipo">
     <option value="0">Maggiore</option>
     <option value="1">Minore</option>
   </select>
+    <br>
 
   <button onclick="calcolaScala()">Calcola Scala</button>
 
@@ -44,3 +53,5 @@
 
 </body>
 </html>
+
+  
