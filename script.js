@@ -58,6 +58,7 @@ function calcolaScala() {
   const tipoScala = parseInt(document.getElementById('tipo').value);
   const risultatoDiv = document.getElementById('risultato');
 
+
   let nota = normalizzaBemolle(inputNota);
 
   // Trova il valore numerico della nota
@@ -69,15 +70,17 @@ function calcolaScala() {
   }
 
   // Calcoliamo la scala in base alla nota e al tipo di tonalità (maggiore o minore)
-  const noteScala = scala(valoreNota.valore, tipoScala);  // Passiamo il valore della nota e il tipo di scala
+  const noteScala = scala(valoreNota.valore, tipoScala); // Passiamo il valore della nota e il tipo di scala
+
 
   const tipoNome = tipoScala === 0 ? "Maggiore" : "Minore";
+  const tipoNomeRel = tipoScala === 0 ? "Minore" : "Maggiore";
 
   // Calcoliamo la relativa per informare l'utente
   const relativa = calcolaRelativa(valoreNota.valore, tipoScala);
 
   risultatoDiv.innerHTML = `
-    <h3>La relativa di ${nota} ${tipoNome} è: ${relativa}</h3>
+    <h3>La relativa di ${nota} ${tipoNome} è: ${relativa} ${tipoNomeRel}</h3>
     <p>Le note della scala sono: ${noteScala.join(' - ')}</p>
   `;
 }
