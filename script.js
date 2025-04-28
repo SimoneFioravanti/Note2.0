@@ -64,7 +64,7 @@ function calcolaScala() {
   let valoreNota = mappa_note.find(n => n.nota === nota);
 
   if (!valoreNota) {
-    risultatoDiv.innerHTML = "<p style='color: red;'>Nota non valida. Riprova!</p>";
+    risultatoDiv.innerHTML = "<p style='color: red;'>Nota non valida, vai a fare in culo!</p>";
     return;
   }
 
