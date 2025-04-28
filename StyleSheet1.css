@@ -1,0 +1,9 @@
+﻿body {
+    background: linear-gradient(to right, lightblue, violet);
+    height: 100vh; /* fa in modo che il body occupi tutto lo schermo */
+    margin: 0;
+}
+.casellanera {
+    color: black; /* Cambia il colore del testo della label */
+    font-size: 18px; /* (opzionale) Cambia anche la grandezza */
+}
